@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar color="cyan">
+    <v-toolbar color="cyan lighten-2">
       <v-form @submit="submit">
           <v-text-field
             solo
@@ -13,9 +13,11 @@
 
 <script>
   export default {
-    data () {
+    components : {
+    },
+    data (){
       return {
-        search: 'tst'
+        search : ''
       }
     },
     methods: {
